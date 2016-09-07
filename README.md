@@ -15,3 +15,10 @@ Fluent Input Plugin for Finagle metric
 ```
 
 Finagle input plugin forwards selected metrics along replacement of slash '/' with underscore '_'.
+
+# Build
+
+```
+$ bundle exec gem build fluent-plugin-finagle.gemspec
+```
+
