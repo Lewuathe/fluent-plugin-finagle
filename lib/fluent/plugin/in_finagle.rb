@@ -53,7 +53,7 @@ module Fluent
             router.emit(
               "#{@tag}.#{metric.gsub("/", "_")}",
               Engine.now.to_i,
-              json_response[metric]
+              {"value" => json_response[metric]}
             )
           end
         rescue => e
