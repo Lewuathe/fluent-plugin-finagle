@@ -1,4 +1,5 @@
-Fluent Input Plugin for Finagle metric
+Fluent Input Plugin for Finagle metric 
+[![Gem](https://img.shields.io/gem/v/fluent-plugin-finagle.svg)](https://rubygems.org/gems/fluent-plugin-finagle)
 ======================================
 
 # Usage
