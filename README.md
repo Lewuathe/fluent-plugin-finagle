@@ -1,4 +1,4 @@
-Fluent Input Plugin for Finagle metric 
+# Fluent Input Plugin for Finagle metric
 [![Gem](https://img.shields.io/gem/v/fluent-plugin-finagle.svg)](https://rubygems.org/gems/fluent-plugin-finagle)
 ======================================
 
@@ -7,7 +7,7 @@ Fluent Input Plugin for Finagle metric
 ```yaml
 <source>
   @type finagle
-  
+
   finagle_host exmaple.com
   finagle_port 9990
   metrics ['finagle/clientregistry/size', 'finagle/timer/pending_tasks.sum']
@@ -22,4 +22,3 @@ Finagle input plugin forwards selected metrics along replacement of slash '/' wi
 ```
 $ bundle exec gem build fluent-plugin-finagle.gemspec
 ```
-
