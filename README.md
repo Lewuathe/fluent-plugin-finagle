@@ -11,7 +11,7 @@
 
   finagle_host exmaple.com
   finagle_port 9990
-  metrics ['finagle/clientregistry/size', 'finagle/timer/pending_tasks.sum']
+  metrics finagle/clientregistry/size,finagle/timer/pending_tasks.sum
   run_interval 10
 </source>
 ```

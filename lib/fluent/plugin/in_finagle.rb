@@ -10,7 +10,7 @@ module Fluent
     config_param :tag, :string, :default => nil
     config_param :finagle_host, :string
     config_param :finagle_port, :string
-    config_param :metrics, :array
+    config_param :metrics, :string
     config_param :run_interval, :time, :default => 60
 
     def initialize
@@ -49,7 +49,7 @@ module Fluent
           response = @conn.get '/admin/metrics.json'
           json_response = JSON.parse(response.body)
 
-          @metrics.each do |metric|
+          @metrics.split(",").each do |metric|
             router.emit(
               "#{@tag}.#{metric.gsub("/", "_")}",
               Engine.now.to_i,
